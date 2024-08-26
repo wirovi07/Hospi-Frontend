@@ -8,10 +8,9 @@ function Login() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Lógica de autenticación aquí
         console.log("Email:", email);
         console.log("Password:", password);
-        navigate("/dashboard"); // Redirige a la página del dashboard después del login
+        navigate("/dashboard"); 
     };
 
     return (
