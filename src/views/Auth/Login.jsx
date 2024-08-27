@@ -1,5 +1,8 @@
+/* eslint-disable react/jsx-no-undef */
 import React from 'react';
 import { MDBContainer, MDBCol, MDBRow, MDBBtn, MDBInput } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
+
 import './Login.css';
 
 function Login() {
@@ -17,7 +20,7 @@ function Login() {
 
                     <div className="d-flex flex-row align-items-center justify-content-center">
 
-                        <p className="lead fw-normal mb-0 me-3">Inicia sesión</p>
+                        <p className="lead fw-normal mb-0 me-3">Inicia sesión con</p>
 
                         <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr" target="_blank" rel="noopener noreferrer" className="btn btn-md me-2" style={{ display: 'inline-block', padding: '10px', borderRadius: '50%', backgroundColor: '#007bff', color: 'white', textAlign: 'center' }}>
                             <i className="fab fa-facebook-f"></i>
@@ -47,7 +50,9 @@ function Login() {
 
                     <div className='text-center text-md-start mt-4 pt-2'>
                         <MDBBtn className="mb-0 px-5" size='lg'>Ingresar</MDBBtn>
-                        <p className="small fw-bold mt-2 pt-1 mb-2">No tienes una cuenta? <a href="#!" className="link-danger">Registrate</a></p>
+                        <p className="small fw-bold mt-2 pt-1 mb-2">
+                            No tienes una cuenta? <Link to="/register" className="link-danger">Regístrate</Link>
+                        </p>
                     </div>
 
                 </MDBCol>

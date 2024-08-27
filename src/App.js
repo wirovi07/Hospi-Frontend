@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import Login from './views/Auth/Login'; 
+import Register from './views/Auth/Register';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         {/* Redirigir desde "/" a "/login" */}
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         {/* Otras rutas */}
       </Routes>
     </Router>
