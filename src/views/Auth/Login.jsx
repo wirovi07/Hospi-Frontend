@@ -20,7 +20,7 @@ function Login() {
 
                     <div className="d-flex flex-row align-items-center justify-content-center">
 
-                        <p className="lead fw-normal mb-0 me-3">Inicia sesión con</p>
+                        <p className="lead fw-normal mb-0 me-3">Inicia sesión con:</p>
 
                         <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr" target="_blank" rel="noopener noreferrer" className="btn btn-md me-2" style={{ display: 'inline-block', padding: '10px', borderRadius: '50%', backgroundColor: '#007bff', color: 'white', textAlign: 'center' }}>
                             <i className="fab fa-facebook-f"></i>
@@ -38,7 +38,7 @@ function Login() {
                     </div>
 
                     <div className="divider d-flex align-items-center my-4">
-                        <p className="text-center fw-bold mx-3 mb-0">O</p>
+                        <p className="text-center fw-bold mx-3 mb-0">Ó</p>
                     </div>
 
                     <MDBInput wrapperClass='mb-4' label='Correo' id='formControlLg' type='email' size="lg" />

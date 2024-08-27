@@ -32,13 +32,13 @@ function Register() {
                 </div>
 
 
-                <p className="text-center mt-3">or:</p>
+                <p className="text-center mt-3">Ó:</p>
             </div>
 
-            <MDBInput wrapperClass='mb-4' label='Name' id='form1' type='text' />
-            <MDBInput wrapperClass='mb-4' label='Username' id='form2' type='text' />
-            <MDBInput wrapperClass='mb-4' label='Email' id='form3' type='email' />
-            <MDBInput wrapperClass='mb-4' label='Password' id='form4' type='password' />
+            <MDBInput wrapperClass='mb-4' label='Nombre' id='form1' type='text' />
+            <MDBInput wrapperClass='mb-4' label='Usuario' id='form2' type='text' />
+            <MDBInput wrapperClass='mb-4' label='Correo' id='form3' type='email' />
+            <MDBInput wrapperClass='mb-4' label='Contraseña' id='form4' type='password' />
 
             <div className='d-flex justify-content-center mb-4'>
                 <MDBCheckbox name='flexCheck' id='flexCheckDefault' label='He leído y acepto los términos.' />
