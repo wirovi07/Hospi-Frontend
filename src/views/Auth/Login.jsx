@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MDBContainer, MDBCol, MDBRow, MDBInput } from 'mdb-react-ui-kit';
+import { MDBCol, MDBRow, MDBInput } from 'mdb-react-ui-kit';
 import axios from 'axios';
 import './Login.css';
 
@@ -99,29 +99,6 @@ function Login() {
                     </form>
                 </MDBCol>
             </MDBRow>
-
-            <footer className="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary mt-xl-5">
-                <div className="text-white mb-3 mb-md-0">
-                    Copyright © 2024. Todos los datos reservados.
-                </div>
-                <div>
-                    <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr" target="_blank" rel="noopener noreferrer" className="mx-3" style={{ color: 'white' }}>
-                        <i className="fab fa-facebook-f" style={{ fontSize: '24px' }}></i>
-                    </a>
-
-                    <a href="https://x.com/?lang=es" target="_blank" rel="noopener noreferrer" className="mx-3" style={{ color: 'white' }}>
-                        <i className="fab fa-twitter" style={{ fontSize: '24px' }}></i>
-                    </a>
-
-                    <a href="https://www.google.com/?hl=es" target="_blank" rel="noopener noreferrer" className="mx-3" style={{ color: 'white' }}>
-                        <i className="fab fa-google" style={{ fontSize: '24px' }}></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" className="mx-3" style={{ color: 'white' }}>
-                        <i className="fab fa-linkedin-in" style={{ fontSize: '24px' }}></i>
-                    </a>
-                </div>
-            </footer>
         </div>
     );
 }
