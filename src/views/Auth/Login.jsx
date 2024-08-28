@@ -14,7 +14,7 @@ function Login() {
         e.preventDefault(); // Previene la recarga de la página
 
         try {
-            const response = await axios.post('http://localhost:3000/users/login', {
+            const response = await axios.post('http://localhost:3040/api/auth/login', {
                 email,
                 password
             });
@@ -37,7 +37,7 @@ function Login() {
     };
 
     return (
-        <MDBContainer fluid className="p-3 my-5 h-custom">
+        <div fluid className="container p-5 my-xl-5 h-custom">
             <MDBRow>
                 <MDBCol col='10' md='6'>
                     <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" className="img-fluid" alt="Sample image" />
@@ -61,7 +61,7 @@ function Login() {
                             </a>
                         </div>
 
-                        <div className="divider d-flex align-items-center my-4">
+                        <div className="divider align-items-center my-4">
                             <p className="text-center fw-bold mx-3 mb-0">Ó</p>
                         </div>
 
@@ -84,7 +84,6 @@ function Login() {
                             onChange={(e) => setPassword(e.target.value)}
                         />
 
-
                         {error && <div className="text-danger mb-4">{error}</div>}
 
                         <div className="d-flex justify-content-between mb-4">
@@ -93,22 +92,18 @@ function Login() {
 
                         <div className="text-center text-md-start mt-4 pt-2">
                             <button className="btn btn-primary btn-lg mb-0 px-5" type="submit">Ingresar</button>
-                            <p className="small fw-bold mt-2 pt-1 mb-2">
+                            <p className="small fw-bold mt-2 pt-1 mb-xl-5">
                                 No tienes una cuenta? <a href="/register" className="link-danger">Regístrate</a>
                             </p>
                         </div>
-
-
                     </form>
                 </MDBCol>
             </MDBRow>
 
-            <div className="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+            <footer className="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary mt-xl-5">
                 <div className="text-white mb-3 mb-md-0">
                     Copyright © 2024. Todos los datos reservados.
                 </div>
-
-
                 <div>
                     <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr" target="_blank" rel="noopener noreferrer" className="mx-3" style={{ color: 'white' }}>
                         <i className="fab fa-facebook-f" style={{ fontSize: '24px' }}></i>
@@ -126,8 +121,8 @@ function Login() {
                         <i className="fab fa-linkedin-in" style={{ fontSize: '24px' }}></i>
                     </a>
                 </div>
-            </div>
-        </MDBContainer>
+            </footer>
+        </div>
     );
 }
 
